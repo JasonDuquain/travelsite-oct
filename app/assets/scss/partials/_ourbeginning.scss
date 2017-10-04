@@ -59,15 +59,18 @@
 .generic-content-container p {
     font-weight: 300;
     line-height: 1.65;
+    margin: 0 0 1.8rem 0;
     
     @include breakpoint($small) {
         font-size: 1.25rem;
     }
 }
 
+/*
 .generic-content-container p + p {
     margin-top: 1.8rem;
 }
+*/
 
 .generic-content-container p a {
     font-weight: 700;
