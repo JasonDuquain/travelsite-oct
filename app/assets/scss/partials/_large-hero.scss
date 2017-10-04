@@ -9,9 +9,10 @@
         text-align: center;
         width: 100%;
         padding: 0 1.125em;
+        padding-top: 88px;
         
         @include breakpoint($medium) {
-            
+            padding-top: 60px;
         }
     } //.large-hero__text-content
 
