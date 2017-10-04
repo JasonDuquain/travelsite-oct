@@ -1,0 +1,85 @@
+
+.headline {
+    font-weight: 300;
+    font-size: 1.9rem;
+    color: $lightblue;
+    
+    @include breakpoint($small) {
+        font-size: 2.875rem;
+    }
+}
+
+.headline--centered {
+    text-align: center;
+    
+}
+
+.headline--orange {
+    color: $orange;
+}
+
+.headline--small {
+    font-size: 1.2rem;
+    
+    @include breakpoint($small) {
+        font-size: 1.875rem;
+    }
+}
+
+.headline--narrow {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.headline--light {
+    font-weight: 100;
+}
+
+.headline--b-margin-large {
+    margin-bottom: 1.6em;
+}
+
+.headline--b-margin-small {
+    margin-bottom: .5em;
+}
+
+.wrapper--b-margin {
+    margin-bottom: 1rem;
+    
+    @include breakpoint($small) {
+        margin-bottom: 3.875rem;
+    }
+}
+
+.headline--no-t-margin {
+    margin-top: 0;
+}
+
+.generic-content-container p {
+    font-weight: 300;
+    line-height: 1.65;
+    
+    @include breakpoint($small) {
+        font-size: 1.25rem;
+    }
+}
+
+.generic-content-container p + p {
+    margin-top: 1.8rem;
+}
+
+.generic-content-container p a {
+    font-weight: 700;
+}
+
+
+.row__b-margin-until-medium {
+    margin-bottom: 1rem;
+    
+    @include breakpoint($medium) {
+        margin-bottom: 0;
+    }
+}
+
+

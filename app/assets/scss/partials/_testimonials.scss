@@ -1,0 +1,74 @@
+
+.page-section--testimonials {
+    
+    
+    @include breakpoint($medium) {
+        
+    } //breakpoint
+    
+    .section-title--blue {
+        
+    }
+    
+    .testimonial {
+        
+        
+        @include breakpoint($medium) {
+            
+        }
+        
+    } //.testimonial
+
+    .testimonial--last {
+        
+    }
+    
+    .testimonial__photo {
+        
+    }
+    
+    .testimonial__title {
+        
+    }
+    
+    .testimonial__subtitle {
+        
+    }
+    
+    .row--t-padding {
+        
+    }
+
+    .row--gutters-small {
+        
+    }
+
+    .row--gutters-small > div {
+        
+    }
+    
+    .row--equal-height-at-medium {
+        @include breakpoint($medium) {
+                     
+        }
+        
+        & > div {
+           
+        } // breakpoint
+        
+    }
+    
+} //.page-section--testimonials
+
+.page-section--no-b-padding-until-medium {
+    
+    
+   @include breakpoint($medium) {
+        
+    } 
+    
+  
+    
+}
+
+

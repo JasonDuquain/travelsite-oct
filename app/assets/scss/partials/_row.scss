@@ -1,0 +1,36 @@
+
+@include breakpoint($medium) {
+    
+    .row {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-column-gap: 2em;
+    }
+    
+    .row__medium-4--larger {
+        grid-column: 1/2;
+    }
+    
+    .row__medium-8--smaller {
+        grid-column: 2/3;
+    }
+    
+    #features .row {
+        
+    }
+    
+    #features .feature-item {
+        
+    }
+    
+    #testimonials .row {
+        
+    }
+    
+    .page-section--testimonials .row__medium-4 {
+        
+    } 
+
+}
+
+

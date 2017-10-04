@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.page-section {
+    padding: 1.2rem calc(50% - 600px);
+    padding-left: 0;
+    padding-right: 0;
+    
+    @include breakpoint($medium) {
+        padding: 4.5rem calc(50% - 600px);
+        
+    }
+    
+    @include breakpoint(max-width 1200px) {
+        padding: 1.2rem 1.12rem;
+    }
+}
+
+.page-section--blue {
+    background-color: $lightblue;
+    color: #fff;
+
+}
+
+.wrapper--medium {
+    max-width: 976px;
+    margin: 0 auto;
+}
+
+a {
+    color: $orange;
+}
+
+.page-section--no-b-padding-until-medium {
+    @include breakpoint(max-width 600px) {
+        
+    }
+}
+

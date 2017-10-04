@@ -1,0 +1,21 @@
+
+.btn {
+    background-color: $lightblue;
+    color: #fff;
+    text-decoration: none;
+    padding: .75rem 1.2rem;
+    display: inline-block;
+}
+
+.btn--orange {
+    background-color: $orange;
+}
+
+.btn--large {
+    padding: 1.1rem 1.9rem;
+    
+    @include breakpoint($small) {
+        font-size: 1.25rem;
+    }
+}
+

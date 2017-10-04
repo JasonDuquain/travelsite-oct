@@ -1,0 +1,51 @@
+
+.modal {
+    
+    
+    &__description {
+        
+    }
+    
+    &--is-visible {
+        
+        
+    }
+}
+
+.section-title--blue {
+    
+    
+}
+
+.section-title--less-margin {
+    
+}
+
+.social-icons {
+    
+    
+    &__icon img {
+       
+        
+        @include breakpoint($small) {
+            
+        }
+    }
+    
+    a {
+        
+        
+    }
+}
+
+.modal__close {
+    
+    
+    &:hover {
+        
+    }
+}
+
+.modal__inner {
+    
+}

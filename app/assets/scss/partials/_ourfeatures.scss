@@ -1,0 +1,51 @@
+
+.section-title {
+    
+    
+    @include breakpoint($small) {
+        
+    }
+    
+    strong {
+        
+    }
+    
+    &__icon {       
+        
+        
+        @include breakpoint($small) {
+            
+        }
+    }
+}
+
+.feature-item {
+    
+    
+    
+    @include breakpoint($small) {
+        
+    }
+    
+    &__icon {
+        
+        
+        
+        @include breakpoint($small) {
+        
+            
+        }
+    }
+    
+    &__title {
+        
+        
+        @include breakpoint($small) {
+            
+        }
+    }
+}
+
+
+
+
