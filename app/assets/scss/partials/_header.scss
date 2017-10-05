@@ -8,6 +8,11 @@
     
     @include breakpoint($medium) {
         background-color: rgba($lightblue, .3);
+        position: fixed;
+        
+        &--dark {
+            background-color: rgba(23,51,72,.85);
+        }
     }
     
     
@@ -73,6 +78,10 @@
                     padding: 12px 0;
                     font-size: 1rem;
                     background-color: transparent;
+                    
+                    &.is-current-link {
+                        color: #fabb69;
+                    }
                 }
             }
             
@@ -96,13 +105,24 @@
     left: 50%;
     transform: translateX(-50%) scale(.8);
     transform-origin: 50% 0;
+    transition: transform 300ms ease-out;
     
     @include breakpoint($medium) {
         left: auto;
         transform: translateX(0);
+        
+        .site-header--dark & {
+            @include breakpoint($medium) {
+                transform: scale(.57);
+            }        
+        }
+        
     }
+           
 }
 
+ 
+    
 .site-header__menu-icon {
     width: 20px;
     height: 19px;
@@ -193,5 +213,17 @@
     transform: scale(1);
 }
 
+:target > h2 {
+    animation: highlightTarget 1200ms ease-in;
+}
 
+@keyframes highlightTarget {
+    0% {
+        background-color: currentColor;
+    }
+    
+    100% {
+        background-color: goldenrod;
+    }
+}
 
