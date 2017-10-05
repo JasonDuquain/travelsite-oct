@@ -97,9 +97,38 @@ var stickyHeader = new StickyHeader();
 
 /************** Modal.js ***********/
 
+class Modal {
+    constructor() {
+        this.openModalButton = document.querySelectorAll('.open-modal');
+        this.modal = document.querySelector('.modal');
+        this.closeModalButton = document.querySelector('.modal__close');
+        this.events(); 
+    }
+    
+    events() {
+       this.openModalButton.forEach((openBtn) => {
+            openBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                this.modal.classList.add('modal--is-visible');
+            });
+        });
+        
+        this.closeModalButton.addEventListener('click', (e) => {
+            e.preventDefault();
+            this.modal.classList.remove('modal--is-visible');
+       });
+        
+        document.addEventListener('keyup', (e) => {
+            if (e.key === 'Escape') {
+               this.modal.classList.remove('modal--is-visible'); 
+            }
+        })
+    }
+    
+}
 
 
-
+var modal = new Modal();
 
 
 
