@@ -18,20 +18,40 @@ class MobileMenu {
     }
 }
 
-
 var mobileMenu = new MobileMenu();
-
-
-
-
-
 
 /******** RevealOnScroll.js********/
 
+class RevealOnScroll {
+    constructor() {
+        this.itemsToReveal = document.querySelectorAll('.feature-item, .testimonial'); 
+        this.hideInitially();
+        this.showElements();
+    }
+    
+    hideInitially() {
+        this.itemsToReveal.forEach((item) => {
+            item.classList.add('reveal-item');
+        });
+    }
+    
+    showElements() {
+        this.itemsToReveal.forEach((item) => {
+            document.addEventListener('scroll', (e) => {
+               if (item.classList.contains('testimonial') && item.getBoundingClientRect().top <= 300) {
+                    item.classList.add('reveal-item--is-visible');
+               } else if (item.classList.contains('feature-item') && item.getBoundingClientRect().top <= 600) {
+                       item.classList.add('reveal-item--is-visible');
+                   }
+             
+            });
+        });
+    }
+}
+ 
 
 
-
-
+var revealOnScroll = new RevealOnScroll();
 
 
 /******* StickyHeader.js************/

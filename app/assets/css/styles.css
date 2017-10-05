@@ -674,6 +674,17 @@ a {
   }
 }
 
+.reveal-item {
+  opacity: 0;
+  transform: scale(1.2);
+  transition: all 1000ms ease-out;
+}
+
+.reveal-item--is-visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
 @media (min-width: 50em) {
   .row {
     display: -ms-grid;
